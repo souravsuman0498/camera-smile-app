@@ -1,0 +1,131 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.notification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 3rem;
+  color: #ff69b4;
+}
+
+.camera-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.weather-info {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.camera-container {
+  position: relative;
+  margin: 20px 0;
+}
+
+.video {
+  width: 100%;
+  max-width: 640px;
+  border-radius: 10px;
+}
+
+.countdown {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filters button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #646cff;
+  color: white;
+  cursor: pointer;
+}
+
+.filters button.active {
+  background: #ff69b4;
+}
+
+.shutter {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 50px;
+  background: #ff4500;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.shutter:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.captured {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.captured img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.captured button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #646cff;
+  color: white;
+  cursor: pointer;
+}
+
+.weather-info {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
