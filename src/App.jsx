@@ -189,6 +189,9 @@ function App() {
         📷 Shutter
       </button>
       <canvas ref={canvasRef} style={{ display: 'none' }} />
+      <footer className="footer">
+      &copy; All rights reserved by Sourav Suman
+    </footer>
     </div>
   )
 }
