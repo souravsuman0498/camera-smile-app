@@ -19,6 +19,8 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  min-height: 100vh;
+  padding-bottom: 70px; /* Add space for footer */
 }
 
 .weather-info {
