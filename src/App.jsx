@@ -155,7 +155,7 @@ function App() {
   return (
     <div className="camera-app">
       <h1 className="header-title">
-        <img src="/public/camera.svg" alt="Camera Logo" className="camera-logo" style={{height: '1.5em', verticalAlign: 'middle', marginRight: '0.5em'}} />
+        <img src="/camera.svg" alt="Camera Logo" className="camera-logo" />
         Smile Camera
       </h1>
       <div className="camera-container">
