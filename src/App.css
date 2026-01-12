@@ -152,3 +152,9 @@
 .overlay-temp {
   font-weight: bold;
 }
+
+.camera-logo {
+  height: 1.5em;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
