@@ -154,11 +154,6 @@ function App() {
 
   return (
     <div className="camera-app">
-      <div className="weather-info">
-        {weatherError && <p>{weatherError}</p>}
-        {temperature !== null && <p>Temp: {temperature}°C</p>}
-        {aqi !== null && <p>AQI: {getAqiLabel(aqi)}</p>}
-      </div>
       <h1>Smile Camera</h1>
       <div className="camera-container">
         <video
@@ -169,7 +164,13 @@ function App() {
           className="video"
         />
         {countdown && <div className="countdown">{countdown}</div>}
+        {/* Overlay AQI and Temp */}
+        <div className="overlay-info">
+          <span className="overlay-aqi">💨 AQI: {getAqiLabel(aqi)}</span>
+          <span className="overlay-temp">🌥️ TEMP: {temperature}°C</span>
+        </div>
       </div>
+      <h2>Capture Your Smile with some filters.</h2>
       <div className="filters">
         {filters.map((filter) => (
           <button
